@@ -46,7 +46,7 @@ handle_logs() {
 
 
 log() {
-  echo -e "\033[1;94m[$DATELOG]\033[1;00m: \033[1;92m$1\033[1;00m" && echo -e "[$DATE][$HOST >> $AUDITOR] $1" > $HOME/.autosecure.log;
+  echo -e "\033[1;94m[$DATELOG]\033[1;00m: \033[1;92m$1\033[1;00m" && echo -e "[$DATE][$HOST >> $AUDITOR] $1" >> $HOME/.autosecure.log;
 }
 
 # ---------------------------------------------- #
